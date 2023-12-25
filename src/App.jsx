@@ -2,10 +2,10 @@ export default function App() {
   return (
       <>
       {/* Navigation */}
-        <x-admin.nav/>
+        {/* <x-admin.nav/> */}
 
         {/* Side Navigation */}
-        <x-admin.side-nav/>
+        {/* <x-admin.side-nav/> */}
 
 
         <main class="col-span-3 grid grid-cols-3 gap-4">
