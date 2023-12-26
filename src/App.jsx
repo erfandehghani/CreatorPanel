@@ -1,23 +1,32 @@
+import Router from "./Router";
+import SideNav from "./components/SideNav/SideNav";
+import Header from "./components/header/Header";
+
 export default function App() {
-  return (
-      <>
-      {/* Navigation */}
-        {/* <x-admin.nav/> */}
+	return (
+		<div>
+			<Header />
 
-        {/* Side Navigation */}
-        {/* <x-admin.side-nav/> */}
+			<div className=" flex ">
+				<SideNav />
 
+				<main>
+					<Router />
+				</main>
+			</div>
 
-        <main class="col-span-3 grid grid-cols-3 gap-4">
+			{/* Navigation */}
+			{/* <x-admin.nav/> */}
 
-            {/* Main content of the page */}
-            
+			{/* Side Navigation */}
+			{/* <x-admin.side-nav/> */}
 
-        </main>
+			{/* <main class="col-span-3 grid grid-cols-3 gap-4">
+				{/* Main content of the page */}
+			{/* </main> */}
 
-        {/* An status modal to show what happened after making a request to server */}
-        {/* <x-admin.inform-modal/> */}
-        
-        </>
-  )
+			{/* An status modal to show what happened after making a request to server */}
+			{/* <x-admin.inform-modal/> */}
+		</div>
+	);
 }
