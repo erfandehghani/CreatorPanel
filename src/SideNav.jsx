@@ -1,6 +1,6 @@
 export default function App() {
     return (
-        <aside class="h-admin-full-card-height grid-cols-1">
+    <aside class="h-admin-full-card-height grid-cols-1">
 
         <x-admin.card>
     

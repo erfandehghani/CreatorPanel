@@ -4,7 +4,7 @@ import Header from "./components/header/Header";
 
 export default function App() {
 	return (
-		<div>
+		<>
 			<Header />
 
 			<SideNav />
@@ -13,6 +13,6 @@ export default function App() {
 				<Router />
 			</main>
 
-		</div>
+		</>
 	);
 }
