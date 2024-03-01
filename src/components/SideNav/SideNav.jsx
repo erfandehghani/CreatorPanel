@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "../Global/Card"
 import { Link } from "react-router-dom";
+import SideNavLink from "./SideNavLink";
+import {Squares2X2Icon, DocumentTextIcon, UserGroupIcon, Square3Stack3DIcon} from '@heroicons/react/24/solid'
 
 const SideNav = () => {
 	return (
@@ -26,20 +28,12 @@ const SideNav = () => {
 
 			{/* Navigation items */}
 
-			<ul className="py-4 space-y-2 grow">
-				<li>
-					{" "}
-					<Link to="/"> dashboard</Link>
-				</li>
-				<li>
-					{" "}
-					<Link to="/Catgories"> Catgories</Link>
-				</li>
-				<li>
-					{" "}
-					<Link to="/Content"> content</Link>
-				</li>
-			</ul>
+			<div className="py-4 space-y-2 grow">
+				<SideNavLink link="/" name="داشبورد" icon={<Squares2X2Icon/>}/>
+				<SideNavLink link="/Catgories" name="دسته بندی" icon={<Square3Stack3DIcon/>}/>
+				<SideNavLink link="/Content" name="محتوا" icon={<DocumentTextIcon/>}/>
+				<SideNavLink link="/Users" name="کاربران" icon={<UserGroupIcon/>}/>
+			</div>
 
 			{/* End */}
 
