@@ -23,7 +23,7 @@ We welcome contributions from developers of all skill levels. Here's how you can
 2. **Clone the Repository**: Clone the forked repository to your local machine using Git.
 
     ```bash
-    git clone https://github.com/your-username/react-blog-control-panel.git
+    git clone https://github.com/erfandehghani/CreatorPanel.git
     ```
 
 3. **Install Dependencies**: Navigate to the project directory and install dependencies using npm or yarn.
