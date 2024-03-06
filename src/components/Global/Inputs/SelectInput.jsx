@@ -1,5 +1,3 @@
-import react from "@heroicons/react"
-
 const SelectInput = ({name, value, description, error, label, options}) => {
 
     return( 
