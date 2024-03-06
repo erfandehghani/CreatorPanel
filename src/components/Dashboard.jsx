@@ -6,8 +6,7 @@ const dashboard = () => {
 	return (
 	<>
 		{/* sales in the last year */}
-		<div class="h-admin-half-card-height col-span-1">
-			<Card>
+			<Card className="col-span-1 h-admin-half-card-height">
 
 				<CardHeader cardTitle="فروش یک سال اخیر"/>
 
@@ -18,12 +17,10 @@ const dashboard = () => {
 				</canvas>
 
 			</Card>
-		</div>
 
 
 		{/* sales in the last 14 days */}
-		<div class="h-admin-half-card-height col-span-2">
-			<Card>
+			<Card className="col-span-2 h-admin-half-card-height">
 
 				<CardHeader cardTitle="فروش 14 روز گذشته"/>
 
@@ -33,7 +30,6 @@ const dashboard = () => {
 				</canvas>
 
 			</Card>
-		</div>
 	</>
 	);
 };
