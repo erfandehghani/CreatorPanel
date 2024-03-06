@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Card = ({ children }) => {
+const Card = ({ children, className }) => {
   return (
-    <div className="p-4 rounded-2xl bg-white h-full shadow-xl divide-y-2 divide-primary space-y-4 flex flex-col items-stretch justify-between">
+    <div className={`${className} flex flex-col items-stretch justify-between p-4 space-y-4 bg-white divide-y-2 shadow-xl rounded-2xl divide-primary`}>
       {children}
     </div>
   );

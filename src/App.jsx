@@ -9,7 +9,7 @@ export default function App() {
 
 			<SideNav />
 
-			<main className="col-span-3 grid grid-cols-3 gap-4">
+			<main className="grid grid-cols-3 col-span-3 gap-4 h-admin-full-card-height">
 				<Router />
 			</main>
 

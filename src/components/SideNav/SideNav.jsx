@@ -2,12 +2,12 @@ import React from "react";
 import Card from "../Global/Card"
 import { Link } from "react-router-dom";
 import SideNavLink from "./SideNavLink";
-import {Squares2X2Icon, DocumentTextIcon, UserGroupIcon, Square3Stack3DIcon} from '@heroicons/react/24/solid'
+import {Squares2X2Icon, DocumentTextIcon, UserGroupIcon, Square3Stack3DIcon, ArrowRightEndOnRectangleIcon} from '@heroicons/react/24/solid'
 
 const SideNav = () => {
 	return (
 		<aside class="h-admin-full-card-height grid-cols-1">
-			<Card>
+			<Card className="h-admin-full-card-height">
 
 
 			{/* User's Name and Photo Section */}
@@ -45,7 +45,7 @@ const SideNav = () => {
 				class="flex items-center justify-start font-normal hover:font-bold fill-auxulary px-4 py-2 rounded-full hover:fill-secondary duration-100 mt-2"
 				>
 					<div class="w-7 flex justify-center items-center">
-						{/* @include("icons.exit") */}
+						<ArrowRightEndOnRectangleIcon className="size-6 text-inherit"/>
 					</div>
 					<span class="mr-4">خروج از حساب کاربری</span>
 
