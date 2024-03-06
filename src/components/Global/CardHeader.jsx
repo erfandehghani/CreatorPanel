@@ -1,4 +1,6 @@
 import React from 'react';
+import {InformationCircleIcon} from '@heroicons/react/24/outline'
+
 
 const CardHeader = ({ children, cardTitle }) => {
   return (
@@ -7,9 +9,7 @@ const CardHeader = ({ children, cardTitle }) => {
         {  cardTitle  }
     </h3>
     {children}
-    <div class="w-6">
-        {/* @include("icons.info") */}
-    </div>
+    <InformationCircleIcon class="size-6 text-auxulary"/>
 </div>
 
   );
