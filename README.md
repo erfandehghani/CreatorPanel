@@ -1,4 +1,4 @@
-# React Blog Control Panel
+# Control Panel
 
 Welcome to the React Blog Control Panel! This open-source project aims to provide a versatile and user-friendly control panel for managing your blog content. Whether you're a seasoned developer or just starting out, we invite you to contribute to this project and help make it even better.
 
