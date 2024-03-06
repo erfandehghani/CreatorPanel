@@ -1,3 +1,26 @@
+
+@font-face {
+    font-family: 'iransans';
+    src: url('./assets/fonts/iransanse/iransans.woff') format('woff-variations'),
+    /* will be the standard and works in Safari now */
+    url('./assets/fonts/iransanse/iransans.woff2') format('woff2');
+    /* for the other supporting browsers */
+    font-weight: 100 1000;
+    font-display: fallback;
+
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+body {
+    font-family: 'iransans', tahoma;
+}
+@supports (font-variation-settings: normal) {
+    body {
+     font-family: 'iransans', tahoma;
+    }
+}
