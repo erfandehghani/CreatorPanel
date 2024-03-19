@@ -27,12 +27,14 @@ export default {
             '4xl': '2rem',
         },
         colors: {
-            'light-primary': '#F8F7FF',
-            'light-secondary': '#D0DBE5',
-            'light-auxulary': '#B3B8BD',
-            'dark-primary': '#0D1F22',
-            'blue-primary': "#758BFD",
-            'blue-secondary': "#4A68FC",
+            'light-primary': '#F8F7FF',     // Used as Backgrounds mostly
+            'light-secondary': '#D0DBE5',   // Another state for backgrounds
+            'light-auxulary': '#B3B8BD',    // Text colors that have to be light
+            'dark-primary': '#0D1F22',      // Main Text Color
+            'blue-primary': "#758BFD",      // Default theme primary
+            'blue-secondary': "#4A68FC",    // Default theme secondary
+            'red-primary': "#FA6262",       // Used in Alert - Buttons - Modals
+            'green-primary': "#3DB53B",     // Used in Alert - Buttons - Modals
         },
         height: {
             '128': '32rem',
