@@ -19,7 +19,7 @@ const SideNav = () => {
 					alt="profile-pic"
 					class="w-10 h-10 rounded-full"/>
 
-				<span class="mr-4 text-xl font-bold text-t-primary">عرفان دهقانی</span>
+				<span class="mr-4 text-xl font-bold text-dark-primary">عرفان دهقانی</span>
 
 			</div>
 
@@ -42,7 +42,7 @@ const SideNav = () => {
 
 			<div>
 				<a href="/admin/logout"
-				class="flex items-center justify-start font-normal hover:font-bold fill-auxulary px-4 py-2 rounded-full hover:fill-secondary duration-100 mt-2"
+				class="flex items-center justify-start font-normal hover:font-bold fill-light-secondary px-4 py-2 rounded-full hover:fill-secondary duration-100 mt-2"
 				>
 					<div class="w-7 flex justify-center items-center">
 						<ArrowRightEndOnRectangleIcon className="size-6 text-inherit"/>

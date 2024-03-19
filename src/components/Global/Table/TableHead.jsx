@@ -1,6 +1,6 @@
 const TableHead = ({children}) => {
     return (
-        <thead className="p-8 bg-primary">
+        <thead className="p-8 bg-light-primary">
             {children}
         </thead>
     );

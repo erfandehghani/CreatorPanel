@@ -30,7 +30,7 @@ const Catgories = () => {
 
 				{/* Loop over all categories and echo them out */}
 				<div class="flex-grow py-6 space-y-4">
-					<div class="flex w-full justify-between items-center px-4 hover:bg-primary hover:text-secondary py-2 rounded-4xl text-t-secondary cursor-pointer font-medium transition duration-100">
+					<div class="flex w-full justify-between items-center px-4 hover:bg-light-primary hover:text-blue-primary py-2 rounded-4xl text-light-auxulary cursor-pointer font-medium transition duration-100">
 						<span>دسته اول</span>
 						<span>55</span>
 					</div>
@@ -39,7 +39,7 @@ const Catgories = () => {
 
 				{/* Adding new categories */}
 				<div
-					class="flex items-center justify-start font-normal hover:font-bold fill-auxulary px-4 py-2 hover:fill-secondary duration-100 mt-2 cursor-pointer">
+					class="flex items-center justify-start font-normal hover:font-bold fill-light-secondary px-4 py-2 hover:fill-secondary duration-100 mt-2 cursor-pointer">
 					<div class="w-7 flex justify-center items-center">
 						<PlusIcon className="size-6 text-inherit"/>
 					</div>

@@ -27,19 +27,14 @@ export default {
             '4xl': '2rem',
         },
         colors: {
-            'primary': '#F8F7FF',
-            'auxulary': '#D0DBE5',
-            't-primary': '#0D1F22',
-            't-secondary': '#B3B8BD',
-            'green-primary': "#4B8161",
-            'green-secondary': "#86EFAC",
-            'green-primary-hover': "#264030",
-            'secondary': "#758BFD",
-            'secondary-hover': "#4A68FC",
-
+            'light-primary': '#F8F7FF',
+            'light-secondary': '#D0DBE5',
+            'light-auxulary': '#B3B8BD',
+            'dark-primary': '#0D1F22',
+            'blue-primary': "#758BFD",
+            'blue-secondary': "#4A68FC",
         },
         height: {
-
             '128': '32rem',
             '160': '40rem',
             'admin-half-card-height': '23.5rem',
