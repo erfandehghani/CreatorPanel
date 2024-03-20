@@ -14,13 +14,13 @@ const CategoryListItem = ({category, active, clickHandler}) =>
         className = activeClasses;
     }
         
-    function handleClick(categoryId) 
+    function handleClick() 
     {
-        clickHandler(categoryId)    
+        clickHandler(category)    
     }
 
     return(
-        <div key={category.id} className={className} onClick={() => handleClick(category.id)}>
+        <div key={category.id} className={className} onClick={handleClick}>
             <span>{category.name}</span>
 
             {/* Here we show how many content is created for this specific category */}

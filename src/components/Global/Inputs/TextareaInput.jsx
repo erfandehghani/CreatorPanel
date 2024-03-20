@@ -10,9 +10,8 @@ const TextareaInput = ({ name, error, description, value, label }) => {
         <p class="text-sm font-medium text-gray-400">
             {description}
         </p>
-        <textarea class="w-full h-48 border border-gray-400 rounded-2xl p-4 resize-none" name={name} id={name}>
-                {value}
-        </textarea>
+        
+        <textarea class="w-full h-48 border border-gray-400 rounded-2xl p-4 resize-none" name={name} id={name} value={value}/>
     </fieldset>
 
 

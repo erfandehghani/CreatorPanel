@@ -53,14 +53,23 @@ const categories = [
 ];
 
 const Catgories = () => {
-  // Reactive CategoryId
+  // Reactive CategoryId and Category
   const [selectedCategoryId, setCategoryId] = useState(null);
+  const [selectedCategory, setCategory] = useState(null);
 
   // Sets the category id and ClassName if user clicked on it
-  function selectCategory(categoryId) {
-    setCategoryId(categoryId);
+  function selectCategory(category) 
+  {
+    setCategoryId(category.id);
+    setCategory(category)
   }
 
+  function clearSelectedCategory() 
+  {
+    setCategoryId(null);
+    setCategory(null)
+  }
+    
   return (
     <>
       {/* First Section: Choosing a category */}
@@ -82,7 +91,7 @@ const Catgories = () => {
         </div>
 
         {/* Adding new categories */}
-        <div class="flex items-center justify-start font-normal hover:font-bold fill-light-secondary px-4 py-2 hover:fill-secondary duration-100 mt-2 cursor-pointer">
+        <div onClick={clearSelectedCategory} class="flex items-center justify-start font-normal hover:font-bold fill-light-secondary px-4 py-2 hover:fill-secondary duration-100 mt-2 cursor-pointer">
           <div class="w-7 flex justify-center items-center">
             <PlusIcon className="size-6 text-inherit" />
           </div>
@@ -99,6 +108,7 @@ const Catgories = () => {
             name="name"
             label="نام دسته"
             description="نام دسته را وارد کنید"
+            value={selectedCategory != null ? selectedCategory.name : ""}
           />
 
           <SelectInput
@@ -106,18 +116,21 @@ const Catgories = () => {
             label="دسته والد - در صورت وجود"
             description="والد را انتخاب کنید"
             options={categories}
+            value={selectedCategory != null ? selectedCategory.parentId : ""}
           />
 
           <TextareaInput
             name="metaDesc"
             label="متا دیسکریپشن دسته"
             description="باید یک متن شامل 60 الی 160 کارکتر برای نمایش به عنوان شرح صفحه در موتور های جستجو وارد کنید."
+            value={selectedCategory != null ? selectedCategory.metaDescription : ""}
           />
 
           <TextareaInput
             name="description"
             label="توضیحات صفحه دسته"
             description="باید یک یا دو پاراگراف حداکثر دارای 480 کارکتر برای نمایش در صفحه مخصوص دسته که مطالب آن نمایش داده میشوند وارد کنید"
+            value={selectedCategory != null ? selectedCategory.description : ""}
           />
 
           <SubmitInput />
