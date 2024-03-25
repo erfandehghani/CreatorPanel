@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TextInput = ({ name, error, description, value, label }) => {
+const TextInput = ({ name, error, description, value, label, placeholder }) => {
   return (
     <fieldset class="flex items-center justify-between">
 
@@ -20,7 +20,8 @@ const TextInput = ({ name, error, description, value, label }) => {
                 type="text"
                 name={name}
                 id={name}
-                value={value}/>
+                value={value}
+                placeholder={placeholder}/>
             <span class="absolute font-bold text-xs bottom-7 right-4 bg-white text-gray-400 px-2 py-1">{description}</span>
         </div>
 
