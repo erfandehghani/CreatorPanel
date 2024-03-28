@@ -15,7 +15,7 @@ function PolarChart() {
       },
       stroke: {
         width: 1,
-        colors: undefined,
+        colors: ["#00ff2f", "#f6ff00", "#fe6a00", "#3f8ad9"],
       },
       yaxis: {
         show: false,
@@ -38,6 +38,31 @@ function PolarChart() {
           enabled: true,
           shadeTo: "light",
           shadeIntensity: 0.6,
+        },
+      },
+
+      legend: {
+        show: true,
+        showForSingleSeries: false,
+        showForNullSeries: true,
+        showForZeroSeries: true,
+        position: "bottom",
+        horizontalAlign: "center",
+        floating: false,
+        fontSize: "14px",
+        fontWeight: 500,
+        labels: {
+          colors: undefined,
+          useSeriesColors: false,
+        },
+        markers: {
+          width: 10,
+          height: 10,
+          strokeColor: "#fff",
+          fillColors: ["#00ff2f", "#f6ff00", "#fe6a00", "#3f8ad9"],
+          radius: 10,
+          offsetX: 0,
+          offsetY: 0,
         },
       },
     },
