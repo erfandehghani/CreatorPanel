@@ -1,7 +1,9 @@
 import React from "react";
 import Card from "./Global/Card";
 import CardHeader from "./Global/CardHeader";
-import SolidCharts from "./SolidCharts";
+import SolidCharts from "./Dashboard/BarChart";
+import BarChart from "./Dashboard/BarChart";
+import PolarChart from "./Dashboard/PolarChart";
 
 const dashboard = () => {
   return (
@@ -11,7 +13,7 @@ const dashboard = () => {
         <CardHeader cardTitle="فروش یک سال اخیر" />
 
         {/* @vite('resources/js/admin/salesThisYearChart.js') */}
-        <SolidCharts />
+        <PolarChart />
         <canvas id="salesOfTheYear">
           <p>Hello Fallback World</p>
         </canvas>
@@ -22,7 +24,7 @@ const dashboard = () => {
         <CardHeader cardTitle="فروش 14 روز گذشته" />
 
         {/* @vite('resources/js/admn/salesCountChart.js') */}
-        <SolidCharts />
+        <BarChart />
         <canvas id="acquisitions">
           <p>Hello Fallback World</p>
         </canvas>

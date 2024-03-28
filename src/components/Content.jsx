@@ -6,7 +6,7 @@ import TableBodyItem from "./Global/Table/TableBodyItem";
 import TableHead from "./Global/Table/TableHead";
 import TableHeadItem from "./Global/Table/TableHeadItem";
 import TableRow from "./Global/Table/TableRow";
-import Pagination from "./Pagination";
+import Pagination from "./Global/Pagination";
 import { posts } from "../POSTDATA.JS";
 const Content = ({}) => {
   const [currentPage, setCurrentPage] = useState(1);
