@@ -4,61 +4,35 @@ function BarChart() {
   const [state, setState] = useState({
     series: [
       {
-        name: " کالای 1",
-        data: [44, 55, 41, 67, 22, 43, 45, 32, 12, 24, 11, 29, 13, 51],
-      },
-      {
-        name: " کالای 2",
-        data: [13, 23, 20, 8, 13, 27, 41, 67, 22, 43, 45, 14, 7, 34],
-      },
-      {
-        name: " کالای 3 ",
-        data: [11, 17, 15, 15, 21, 14, 41, 67, 22, 43, 45, 14, 7, 34],
-      },
-      {
-        name: " کالای 4 ",
-        data: [21, 7, 25, 13, 22, 8, 41, 67, 22, 43, 45, 14, 7, 34],
+        name: "مجموع فروش",
+        data: [12, 10, 25, 34, 26, 64, 1, 0, 99, 52, 21, 34, 49, 82],
       },
     ],
     options: {
       chart: {
-        type: "bar",
         height: 350,
-        stacked: true,
-        toolbar: {
-          show: true,
-        },
-        zoom: {
-          enabled: true,
-        },
+        type: "bar",
       },
-      responsive: [
-        {
-          breakpoint: 480,
-          options: {
-            legend: {
-              position: "bottom",
-              offsetX: -10,
-              offsetY: 0,
-            },
-          },
-        },
-      ],
       plotOptions: {
         bar: {
-          horizontal: false,
           borderRadius: 10,
           dataLabels: {
-            total: {
-              enabled: true,
-              style: {
-                fontSize: "13px",
-                fontWeight: 900,
-              },
-            },
+            position: "top", // top, center, bottom
           },
         },
       },
+      dataLabels: {
+        enabled: true,
+        // formatter: function (val) {
+        //   return val + "%";
+        // },
+        // offsetY: -20,
+        style: {
+          fontSize: "12px",
+          colors: ["#304758"],
+        },
+      },
+
       xaxis: {
         type: "datetime",
         categories: [
@@ -77,13 +51,51 @@ function BarChart() {
           "01/13/2011 GMT",
           "01/14/2011 GMT",
         ],
+        position: "top",
+        axisBorder: {
+          show: true,
+        },
+        axisTicks: {
+          show: false,
+        },
+        crosshairs: {
+          fill: {
+            type: "gradient",
+            gradient: {
+              colorFrom: "#D8E3F0",
+              colorTo: "#BED1E6",
+              stops: [0, 100],
+              opacityFrom: 0.4,
+              opacityTo: 0.5,
+            },
+          },
+        },
+        tooltip: {
+          enabled: true,
+        },
       },
-      legend: {
-        position: "right",
-        offsetY: 40,
+      yaxis: {
+        axisBorder: {
+          show: false,
+        },
+        axisTicks: {
+          show: false,
+        },
+        labels: {
+          show: false,
+          // formatter: function (val) {
+          //   return val + "%";
+          // },
+        },
       },
-      fill: {
-        opacity: 1,
+      title: {
+        text: "Monthly Inflation in Argentina, 2002",
+        floating: true,
+        offsetY: 330,
+        align: "center",
+        style: {
+          color: "#444",
+        },
       },
     },
   });
