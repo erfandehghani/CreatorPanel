@@ -8,7 +8,6 @@ import TableHeadItem from "./Global/Table/TableHeadItem";
 import TableRow from "./Global/Table/TableRow";
 import Pagination from "./Global/Pagination";
 import { posts } from "../POSTDATA.JS";
-import { Link } from "react-router-dom";
 const Content = ({}) => {
   const [currentPage, setCurrentPage] = useState(1);
   const recordsPerPage = 10;
@@ -54,9 +53,7 @@ const Content = ({}) => {
               <TableBodyItem>{post.id}</TableBodyItem>
               <TableBodyItem>{post.title}</TableBodyItem>
               <TableBodyItem>{post.category}</TableBodyItem>
-              <TableBodyItem>
-                <Link to="/Catgories">{post.tags}</Link>
-              </TableBodyItem>
+              <TableBodyItem>{post.tags}</TableBodyItem>
               <TableBodyItem>{post.author}</TableBodyItem>
               <TableBodyItem>{post.date}</TableBodyItem>
               <TableBodyItem>{post.comments}</TableBodyItem>

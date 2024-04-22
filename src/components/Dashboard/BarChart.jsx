@@ -51,7 +51,7 @@ function BarChart() {
           "01/13/2011 GMT",
           "01/14/2011 GMT",
         ],
-        position: "top",
+        position: "bottom",
         axisBorder: {
           show: true,
         },
@@ -86,15 +86,6 @@ function BarChart() {
           // formatter: function (val) {
           //   return val + "%";
           // },
-        },
-      },
-      title: {
-        text: "Monthly Inflation in Argentina, 2002",
-        floating: true,
-        offsetY: 330,
-        align: "center",
-        style: {
-          color: "#444",
         },
       },
     },
