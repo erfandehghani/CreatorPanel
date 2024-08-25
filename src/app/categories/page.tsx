@@ -1,13 +1,15 @@
+"use client"
+
 import React from "react";
-import Card from "./Global/Card";
-import CardHeader from "./Global/CardHeader";
+import Card from "../../components/Global/Card";
+import CardHeader from "../../components/Global/CardHeader";
 import { PlusIcon } from "@heroicons/react/24/outline";
-import TextInput from "./Global/Inputs/TextInput";
-import SelectInput from "./Global/Inputs/SelectInput";
-import TextareaInput from "./Global/Inputs/TextareaInput";
-import SubmitInput from "./Global/Inputs/SubmitInput";
+import TextInput from "../../components/Global/Inputs/TextInput";
+import SelectInput from "../../components/Global/Inputs/SelectInput";
+import TextareaInput from "../../components/Global/Inputs/TextareaInput";
+import SubmitInput from "../../components/Global/Inputs/SubmitInput";
 import { useState } from "react";
-import CategoryListItem from "./Categories/CategoryListItem";
+import CategoryListItem from "../../components/Categories/CategoryListItem";
 
 const categories = [
   {
@@ -52,24 +54,22 @@ const categories = [
   },
 ];
 
-const Catgories = () => {
+export default function Categories() {
   // Reactive CategoryId and Category
-  const [selectedCategoryId, setCategoryId] = useState(null);
-  const [selectedCategory, setCategory] = useState(null);
+  const [selectedCategoryId, setCategoryId] = useState<null | any>(null);
+  const [selectedCategory, setCategory] = useState<null | any>(null);
 
   // Sets the category id and ClassName if user clicked on it
-  function selectCategory(category) 
-  {
+  function selectCategory(category: any) {
     setCategoryId(category.id);
     setCategory(category)
   }
 
-  function clearSelectedCategory() 
-  {
+  function clearSelectedCategory() {
     setCategoryId(null);
     setCategory(null)
   }
-    
+
   return (
     <>
       {/* First Section: Choosing a category */}
@@ -78,7 +78,7 @@ const Catgories = () => {
         <CardHeader cardTitle={"دسته بندی ها"} />
 
         {/* Loop over all categories and echo them out */}
-        <div class="flex-grow py-6 space-y-4">
+        <div className="flex-grow py-6 space-y-4">
           {categories.map((category) => {
             return (
               <CategoryListItem
@@ -91,11 +91,11 @@ const Catgories = () => {
         </div>
 
         {/* Adding new categories */}
-        <div onClick={clearSelectedCategory} class="flex items-center justify-start font-normal hover:font-bold fill-light-secondary px-4 py-2 hover:fill-secondary duration-100 mt-2 cursor-pointer">
-          <div class="w-7 flex justify-center items-center">
+        <div onClick={clearSelectedCategory} className="flex items-center justify-start font-normal hover:font-bold fill-light-secondary px-4 py-2 hover:fill-secondary duration-100 mt-2 cursor-pointer">
+          <div className="w-7 flex justify-center items-center">
             <PlusIcon className="size-6 text-inherit" />
           </div>
-          <span class="mr-4">افزودن دسته جدید</span>
+          <span className="mr-4">افزودن دسته جدید</span>
         </div>
       </Card>
 
@@ -103,41 +103,35 @@ const Catgories = () => {
       <Card className="col-span-2 h-admin-full-card-height">
         <CardHeader cardTitle={"ویرایش / افزودن دسته"} />
 
-        <form class="flex-grow py-8 space-y-6 overflow-y-scroll pl-4">
+        <form className="flex-grow py-8 space-y-6 overflow-y-scroll pl-4">
           <TextInput
             name="name"
             label="نام دسته"
             description="نام دسته را وارد کنید"
-            value={selectedCategory != null ? selectedCategory.name : ""}
-          />
+            value={selectedCategory != null ? selectedCategory.name : ""} error={undefined} placeholder={undefined} type={"text"} />
 
           <SelectInput
             name="parent"
             label="دسته والد - در صورت وجود"
             description="والد را انتخاب کنید"
             options={categories}
-            value={selectedCategory != null ? selectedCategory.parentId : ""}
-          />
+            value={selectedCategory != null ? selectedCategory.parentId : ""} error={undefined} />
 
           <TextareaInput
             name="metaDesc"
             label="متا دیسکریپشن دسته"
             description="باید یک متن شامل 60 الی 160 کارکتر برای نمایش به عنوان شرح صفحه در موتور های جستجو وارد کنید."
-            value={selectedCategory != null ? selectedCategory.metaDescription : ""}
-          />
+            value={selectedCategory != null ? selectedCategory.metaDescription : ""} error={undefined} />
 
           <TextareaInput
             name="description"
             label="توضیحات صفحه دسته"
             description="باید یک یا دو پاراگراف حداکثر دارای 480 کارکتر برای نمایش در صفحه مخصوص دسته که مطالب آن نمایش داده میشوند وارد کنید"
-            value={selectedCategory != null ? selectedCategory.description : ""}
-          />
+            value={selectedCategory != null ? selectedCategory.description : ""} error={undefined}          />
 
-          <SubmitInput />
+          <SubmitInput className={undefined} />
         </form>
       </Card>
     </>
   );
 };
-
-export default Catgories;

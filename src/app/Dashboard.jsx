@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "./Global/Card"
-import CardHeader from "./Global/CardHeader";
+import Card from "../components/Global/Card"
+import CardHeader from "../components/Global/CardHeader";
 
 const dashboard = () => {
 	return (

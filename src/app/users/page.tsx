@@ -1,12 +1,12 @@
+import Card from "@/components/Global/Card";
+import CardHeader from "@/components/Global/CardHeader";
+import Table from "@/components/Global/Table/Table";
+import TableBody from "@/components/Global/Table/TableBody";
+import TableBodyItem from "@/components/Global/Table/TableBodyItem";
+import TableHead from "@/components/Global/Table/TableHead";
+import TableHeadItem from "@/components/Global/Table/TableHeadItem";
+import TableRow from "@/components/Global/Table/TableRow";
 import { PencilIcon, TrashIcon } from "@heroicons/react/24/outline";
-import Card from "./Global/Card"
-import CardHeader from "./Global/CardHeader"
-import Table from "./Global/Table/Table";
-import TableBody from "./Global/Table/TableBody";
-import TableBodyItem from "./Global/Table/TableBodyItem";
-import TableHead from "./Global/Table/TableHead";
-import TableHeadItem from "./Global/Table/TableHeadItem";
-import TableRow from "./Global/Table/TableRow";
 
 const Users = () => {
 	return (
@@ -39,10 +39,8 @@ const Users = () => {
                     {/* Tools to control the user */}
                     <TableBodyItem>
                         
-                    <div class="flex items-center gap-x-6">
+                    <div className="flex items-center gap-x-6">
                         <button
-                            wire:click="delete"
-                            wire:confirm="آیا از حذف کاربر اطمینان دارید؟ "
                             className="text-gray-500 transition-colors duration-200 hover:text-red-500 focus:outline-none">
                             <TrashIcon className="size-6"/>
                         </button>

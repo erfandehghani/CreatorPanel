@@ -1,10 +1,10 @@
-import Card from "./Global/Card";
-import Table from "./Global/Table/Table";
-import TableBody from "./Global/Table/TableBody";
-import TableBodyItem from "./Global/Table/TableBodyItem";
-import TableHead from "./Global/Table/TableHead";
-import TableHeadItem from "./Global/Table/TableHeadItem";
-import TableRow from "./Global/Table/TableRow";
+import Card from "../../components/Global/Card";
+import Table from "../../components/Global/Table/Table";
+import TableBody from "../../components/Global/Table/TableBody";
+import TableBodyItem from "../../components/Global/Table/TableBodyItem";
+import TableHead from "../../components/Global/Table/TableHead";
+import TableHeadItem from "../../components/Global/Table/TableHeadItem";
+import TableRow from "../../components/Global/Table/TableRow";
 
 const Content = ({}) => {
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TextInput = ({ name, error, description, value, label, placeholder }) => {
+const TextInput = ({ name, error, description, value, label, placeholder, type }) => {
   return (
     <fieldset class="flex items-center justify-between">
 
@@ -17,7 +17,7 @@ const TextInput = ({ name, error, description, value, label, placeholder }) => {
         <div class="relative w-64 h-10">
             <input
                 class="absolute top-0 bottom-0 right-0 left-0 border border-gray-400 rounded-2xl px-4"
-                type="text"
+                type={type}
                 name={name}
                 id={name}
                 value={value}

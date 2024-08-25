@@ -1,59 +1,36 @@
-# Control Panel
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Welcome to the React Blog Control Panel! This open-source project aims to provide a versatile and user-friendly control panel for managing your blog content. Whether you're a seasoned developer or just starting out, we invite you to contribute to this project and help make it even better.
+## Getting Started
 
-## About
+First, run the development server:
 
-This project is built with React, a popular JavaScript library for building user interfaces. Our goal is to create a robust control panel that simplifies the process of managing a blog, from creating and editing posts to managing user comments and settings.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Features
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- **Intuitive Interface**: User-friendly design for easy navigation and usage.
-- **Post Management**: Create, edit, and delete blog posts effortlessly.
-- **User Authentication**: Secure login system to manage user access.
-- **Comment Moderation**: Easily manage and moderate user comments on your blog posts.
-- **Customization Options**: Tailor the control panel to fit your specific needs with customizable settings.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## How to Contribute
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-We welcome contributions from developers of all skill levels. Here's how you can get involved:
+## Learn More
 
-1. **Fork the Repository**: Start by forking the repository to your own GitHub account.
+To learn more about Next.js, take a look at the following resources:
 
-2. **Clone the Repository**: Clone the forked repository to your local machine using Git.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-    ```bash
-    git clone https://github.com/erfandehghani/CreatorPanel.git
-    ```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-3. **Install Dependencies**: Navigate to the project directory and install dependencies using npm or yarn.
+## Deploy on Vercel
 
-    ```bash
-    cd react-blog-control-panel
-    npm install
-    ```
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-    or
-
-    ```bash
-    cd react-blog-control-panel
-    yarn install
-    ```
-
-4. **Make Changes**: Once you've made your changes, commit them to your forked repository.
-
-5. **Submit a Pull Request**: Finally, submit a pull request from your forked repository to the main repository. Be sure to include a detailed description of the changes you've made.
-
-## Code of Conduct
-
-Please note that we have a Code of Conduct in place to ensure a positive and inclusive community. By contributing to this project, you agree to abide by the terms outlined in the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Questions or Concerns?
-
-If you have any questions or concerns about the project, feel free to open an issue or reach out to the maintainers directly.
-
-Happy coding!
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
